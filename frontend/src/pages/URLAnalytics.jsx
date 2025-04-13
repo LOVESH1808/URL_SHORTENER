@@ -160,7 +160,7 @@ const URLAnalytics = () => {
               Short Url:
             </Text>
             <Link href={`/api/user/link/short/${shortURL}`}>
-              {`/api/user/link/short/${shortURL}`}
+              {`https://url-shortener-1-nx20.onrender.com/api/user/link/short/${shortURL}`}
             </Link>
           </Box>
         </Box>
