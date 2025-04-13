@@ -132,7 +132,7 @@ const getAnalytics = expressAsyncHandler(async (req, res) => {
         });
     }
 
-    res.status(200).json({longUrl : link.longUrl, shortUrl : link.shortUrl, analytics : link.analytics, clicks : link.clicks});
+    res.status(200).json({expiresOn: link.expiresAt, longUrl : link.longUrl, shortUrl : link.shortUrl, analytics : link.analytics, clicks : link.clicks});
   } catch (error) {
     res
       .status(500)
