@@ -64,7 +64,7 @@ const URLAnalytics = () => {
       try {
         setIsLoading(true);
         const response = await axios.get(
-          `http://localhost:5000/api/user/link/analytics/${shortURL}`,
+          `http://localhost:10000/api/user/link/analytics/${shortURL}`,
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -123,7 +123,7 @@ const URLAnalytics = () => {
             Scan QR to visit Short URL:
           </Text>
           <QRCodeCanvas
-            value={`http://localhost:5000/api/user/link/short/${shortURL}`}
+            value={`http://localhost:10000/api/user/link/short/${shortURL}`}
             size={128}
           />
         </Box>
@@ -159,8 +159,8 @@ const URLAnalytics = () => {
             <Text mr={2} fontSize="lg" fontWeight="bold">
               Short Url:
             </Text>
-            <Link href={`http://localhost:5000/api/user/link/short/${shortURL}`}>
-              {`http://localhost:5000/api/user/link/short/${shortURL}`}
+            <Link href={`http://localhost:10000/api/user/link/short/${shortURL}`}>
+              {`http://localhost:10000/api/user/link/short/${shortURL}`}
             </Link>
           </Box>
         </Box>

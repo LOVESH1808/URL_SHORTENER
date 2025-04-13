@@ -47,7 +47,7 @@ const UsersPage = () => {
     try {
       setIsLoading(true);
       const response = await axios.post(
-        "http://localhost:5000/api/user/link/shortURL",
+        "http://localhost:10000/api/user/link/shortURL",
         {
           name: `${name}`,
           url: `${longUrl}`,
@@ -79,7 +79,7 @@ const UsersPage = () => {
     try {
       setIsLoading(true);
       const response = await axios.delete(
-        `http://localhost:5000/api/user/link/short/${shortUrl}`,
+        `http://localhost:10000/api/user/link/short/${shortUrl}`,
         {
           headers: {
             "Content-type": "application/json",
@@ -119,7 +119,7 @@ const UsersPage = () => {
     try {
       setIsLoading(true);
       const response = await axios.get(
-        `http://localhost:5000/api/user/link/allLinks`,
+        `http://localhost:10000/api/user/link/allLinks`,
         {
           headers: {
             "Content-type": "application/json",
