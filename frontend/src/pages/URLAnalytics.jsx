@@ -124,7 +124,7 @@ const URLAnalytics = () => {
           <Text fontWeight="semibold" mb={2}>
             Scan QR to visit Short URL:
           </Text>
-          <QRCodeCanvas value={`/api/user/link/short/${shortURL}`} size={128} />
+          <QRCodeCanvas value={`https://url-shortener-1-nx20.onrender.com/api/user/link/short/${shortURL}`} size={128} />
         </Box>
       </Flex>
 
