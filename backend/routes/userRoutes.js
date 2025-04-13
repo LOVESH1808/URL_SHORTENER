@@ -5,8 +5,8 @@ const router = express.Router();
 
 router.route('/').post(registerUser);
 router.route('/login').post(loginUser);
-router.route('/getAllUser').get(protect, getAllUser);
-router.route('/deleteUser/:userId').delete(protect, deleteUser);
+// router.route('/getAllUser').get(protect, getAllUser);
+// router.route('/deleteUser/:userId').delete(protect, deleteUser);
 
 module.exports = router;
 

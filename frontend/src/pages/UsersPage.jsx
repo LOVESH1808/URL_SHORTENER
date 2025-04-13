@@ -79,7 +79,7 @@ const UsersPage = () => {
     try {
       setIsLoading(true);
       const response = await axios.delete(
-        `http://localhost:5000/api/user/link/${shortUrl}`,
+        `http://localhost:5000/api/user/link/short/${shortUrl}`,
         {
           headers: {
             "Content-type": "application/json",

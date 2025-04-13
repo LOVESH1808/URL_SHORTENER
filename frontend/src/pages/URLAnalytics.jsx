@@ -123,7 +123,7 @@ const URLAnalytics = () => {
             Scan QR to visit Short URL:
           </Text>
           <QRCodeCanvas
-            value={`http://localhost:5000/api/user/link/${shortURL}`}
+            value={`http://localhost:5000/api/user/link/short/${shortURL}`}
             size={128}
           />
         </Box>
@@ -159,8 +159,8 @@ const URLAnalytics = () => {
             <Text mr={2} fontSize="lg" fontWeight="bold">
               Short Url:
             </Text>
-            <Link href={`http://localhost:5000/api/user/link/${shortURL}`}>
-              {`http://localhost:5000/api/user/link/${shortURL}`}
+            <Link href={`http://localhost:5000/api/user/link/short/${shortURL}`}>
+              {`http://localhost:5000/api/user/link/short/${shortURL}`}
             </Link>
           </Box>
         </Box>
