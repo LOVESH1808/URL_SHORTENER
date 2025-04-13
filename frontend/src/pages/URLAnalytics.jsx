@@ -37,6 +37,7 @@ const URLAnalytics = () => {
   const [analyticsData, setAnalyticsData] = useState([]);
   const [clickCount, setClickCount] = useState(0);
   const [longUrl, setLongUrl] = useState("");
+  const [expiresOn, setExpiresOn] = useState("");
   let { shortURL } = useParams();
   const [isLoading, setIsLoading] = useState(false);
 
@@ -72,6 +73,7 @@ const URLAnalytics = () => {
           }
         );
         setLongUrl(response.data.longUrl);
+        setExpiresOn(response.data.expiresOn)
         setAnalyticsData(response.data.analytics);
         setClickCount(response.data.clicks);
       } catch (err) {
@@ -122,10 +124,7 @@ const URLAnalytics = () => {
           <Text fontWeight="semibold" mb={2}>
             Scan QR to visit Short URL:
           </Text>
-          <QRCodeCanvas
-            value={`/api/user/link/short/${shortURL}`}
-            size={128}
-          />
+          <QRCodeCanvas value={`/api/user/link/short/${shortURL}`} size={128} />
         </Box>
       </Flex>
 
@@ -162,6 +161,25 @@ const URLAnalytics = () => {
             <Link href={`/api/user/link/short/${shortURL}`}>
               {`https://url-shortener-1-nx20.onrender.com/api/user/link/short/${shortURL}`}
             </Link>
+          </Box>
+          <Box
+            display="flex"
+            alignItems="center"
+            border="1px solid #ccc"
+            borderRadius="md"
+          >
+            <Text mr={2} fontSize="lg" fontWeight="bold">
+              Expires on :
+            </Text>
+            <Text>
+              {new Date(expiresOn).toLocaleString(undefined, {
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+                hour: "numeric",
+                minute: "2-digit",
+              })}
+            </Text>
           </Box>
         </Box>
         <Box display="flex" border="1px solid #ccc" borderRadius="md">
