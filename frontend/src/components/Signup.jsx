@@ -29,7 +29,7 @@ const Signup = () => {
                 }
             }
             const response = await axios.post(
-                "http://localhost:10000/api/user",
+                "/api/user",
                 {name, email, password },
                 config
             )
