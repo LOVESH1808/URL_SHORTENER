@@ -8,7 +8,7 @@
 A full-stack URL Shortener + Analytics Dashboard inspired by Bitly. Built for the SDE Assignment with **React**, **Node.js**, and **MongoDB**.
 
 
-# NOTE : THIS PROJECT IS DEPLOYED ON RENDER IN ITS FREE INSTANCE . IT'LL TAKE 50 TO 70 SEC TO RESTART THE SERVER. PLEASE WAIT PATIENTLY
+## NOTE : THIS PROJECT IS DEPLOYED ON RENDER IN ITS FREE INSTANCE . IT'LL TAKE 50 TO 70 SEC TO RESTART THE SERVER. PLEASE WAIT PATIENTLY
 ---
 
 ## Deployed Site : https://url-shortener-1-nx20.onrender.com/
