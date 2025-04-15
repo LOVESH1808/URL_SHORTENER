@@ -24,7 +24,7 @@ const HomePage = () => {
         borderRadius="lg"
         borderWidth="1px"
       >
-        <Text fontSize="2xl" fontFamily="Work sans" textAlign="center">Dacoid - Assignment</Text>
+        <Text fontSize="2xl" fontFamily="Work sans" textAlign="center">URL - SHORTNER</Text>
       </Box>
       <Box bg={"lightcyan"} w="100%" borderRadius="lg" borderWidth="1px" p={4}>
         <Tabs variant='soft-rounded' >
